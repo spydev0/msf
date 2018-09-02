@@ -7,7 +7,7 @@ USER root
 # PosgreSQL configuration
 COPY ./scripts/db.sql /tmp/
 COPY ./conf/database.yml /usr/share/metasploit-framework/config/
-COPY ./conf/tmux.conf --output /root/.tmux.conf
+COPY ./conf/tmux.conf /root/.tmux.conf
 
 # Startup script
 COPY ./scripts/init.sh /usr/local/bin/init.sh
